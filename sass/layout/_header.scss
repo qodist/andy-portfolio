@@ -1,0 +1,36 @@
+.header {
+    background-image: url("../src/img/laptop_blur.jpg");
+    background-size: cover;
+    padding-top: 2rem;
+    text-align: left;
+    height: 80vh;
+    width: 100%;
+
+    .navbar {
+        height: 6rem;
+        padding: 2rem 0 0 4rem;
+    }
+
+    .navbar__brand--logo img {
+        height: 3.6rem;
+        display: inline-block;
+        float: left;
+        margin-right: 1rem;
+    }
+    
+    .navbar__brand--info {
+        display: inline-block;
+        float: left;
+        color: $color-light;
+
+        .navbar__brand--name {
+            font-weight: bold;
+            font-size: 1.8rem;
+            letter-spacing: -1px;
+        }
+
+        .navbar__brand--title {
+            font-size: 1.25rem;
+        }
+    }
+}
