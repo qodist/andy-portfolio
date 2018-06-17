@@ -1,36 +1,49 @@
 .header {
-    background-image: url("../src/img/laptop_blur.jpg");
+    height: 85vh;
+    background-image: url(/src/img/laptop_blur.jpg);
     background-size: cover;
-    padding-top: 2rem;
-    text-align: left;
-    height: 80vh;
-    width: 100%;
+    background-position: top;
+    position: relative;
+}
 
-    .navbar {
-        height: 6rem;
-        padding: 2rem 0 0 4rem;
-    }
+.logo-box {
+    position: absolute;
+    top: 5rem;
+    left: 5rem;
+}
 
-    .navbar__brand--logo img {
-        height: 3.6rem;
-        display: inline-block;
-        float: left;
-        margin-right: 1rem;
-    }
-    
-    .navbar__brand--info {
-        display: inline-block;
-        float: left;
-        color: $color-light;
+.logo {
+    height: 5rem;
+}
 
-        .navbar__brand--name {
-            font-weight: bold;
-            font-size: 1.8rem;
-            letter-spacing: -1px;
-        }
+.text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
-        .navbar__brand--title {
-            font-size: 1.25rem;
-        }
-    }
+.heading-primary {
+    color: $color-light;
+    text-transform: uppercase;
+
+    backface-visibility: hidden;
+}
+
+.heading-primary-main {
+    display: block;
+    font-size: 5rem;
+    font-weight: 400;
+    letter-spacing: 2rem;
+
+    animation: moveInLeft 1s ease-out;
+}
+
+.heading-primary-sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 1.2rem;
+
+    animation: moveInRight 1s ease-out;
 }

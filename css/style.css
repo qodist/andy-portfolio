@@ -1,3 +1,23 @@
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-30rem); }
+  80% {
+    transform: translateX(1rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(30rem); }
+  80% {
+    transform: translateX(-1rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
 *,
 *::after,
 *::before {
@@ -12,7 +32,8 @@ body {
   box-sizing: border-box; }
 
 body {
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.7; }
 
 .container {
   width: 60%;
@@ -45,27 +66,41 @@ body {
     width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
 
 .header {
-  background-image: url("../src/img/laptop_blur.jpg");
+  height: 85vh;
+  background-image: url(/src/img/laptop_blur.jpg);
   background-size: cover;
-  padding-top: 2rem;
-  text-align: left;
-  height: 80vh;
-  width: 100%; }
-  .header .navbar {
-    height: 6rem;
-    padding: 2rem 0 0 4rem; }
-  .header .navbar__brand--logo img {
-    height: 3.6rem;
-    display: inline-block;
-    float: left;
-    margin-right: 1rem; }
-  .header .navbar__brand--info {
-    display: inline-block;
-    float: left;
-    color: #fff; }
-    .header .navbar__brand--info .navbar__brand--name {
-      font-weight: bold;
-      font-size: 1.8rem;
-      letter-spacing: -1px; }
-    .header .navbar__brand--info .navbar__brand--title {
-      font-size: 1.25rem; }
+  background-position: top;
+  position: relative; }
+
+.logo-box {
+  position: absolute;
+  top: 5rem;
+  left: 5rem; }
+
+.logo {
+  height: 5rem; }
+
+.text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+  backface-visibility: hidden; }
+
+.heading-primary-main {
+  display: block;
+  font-size: 5rem;
+  font-weight: 400;
+  letter-spacing: 2rem;
+  animation: moveInLeft 1s ease-out; }
+
+.heading-primary-sub {
+  display: block;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 1.2rem;
+  animation: moveInRight 1s ease-out; }
