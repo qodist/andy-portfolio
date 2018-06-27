@@ -1,27 +1,27 @@
 .header {
     height: 85vh;
-    background-image: url(/src/img/laptop_blur.jpg);
+    background-image: url(../src/img/laptop_blur.jpg);
     background-size: cover;
     background-position: top;
     position: relative;
-}
 
-.logo-box {
-    position: absolute;
-    top: 5rem;
-    left: 5rem;
-}
+    &__logo-box {
+        position: absolute;
+        top: 5rem;
+        left: 5rem;
+    }
+    
+    &__logo {
+        height: 5rem;
+    }
 
-.logo {
-    height: 5rem;
-}
-
-.text-box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+    &__text-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
 }
 
 .heading-primary {
@@ -30,22 +30,21 @@
 
     backface-visibility: hidden;
     margin-bottom: 7rem;
-}
 
-.heading-primary-main {
-    display: block;
-    font-size: 5rem;
-    font-weight: 400;
-    letter-spacing: 2rem;
-
-    animation: moveInLeft 1s ease-out;
-}
-
-.heading-primary-sub {
-    display: block;
-    font-size: 2rem;
-    font-weight: 400;
-    letter-spacing: 1.2rem;
-
-    animation: moveInRight 1s ease-out;
+    &--main {
+        display: block;
+        font-size: 5rem;
+        font-weight: 400;
+        letter-spacing: 2rem;
+    
+        animation: moveInLeft 1s ease-out;
+    }
+    
+    &--sub {
+        display: block;
+        font-size: 2rem;
+        font-weight: 400;
+        letter-spacing: 1.2rem;
+        animation: moveInRight 1s ease-out;
+    }
 }
