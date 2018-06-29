@@ -43,9 +43,39 @@ body {
   font-family: "Open Sans", sans-serif;
   line-height: 1.7; }
 
-.container {
-  width: 60%;
-  margin: 0 auto; }
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 7rem; }
+  .heading-primary--main {
+    display: block;
+    font-size: 5rem;
+    font-weight: 400;
+    letter-spacing: 2rem;
+    animation: moveInLeft 1s ease-out; }
+  .heading-primary--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 1.2rem;
+    animation: moveInRight 1s ease-out; }
+
+.heading-secondary {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: inline-block;
+  background-image: linear-gradient(to right, #ff9100, #ff4500);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 2px; }
+
+.u-center-text {
+  text-align: center; }
+
+.u-margin-bottom-8 {
+  margin-bottom: 8rem; }
 
 .btn:link, .btn:visited {
   display: inline-block;
@@ -99,11 +129,12 @@ body {
     width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
 
 .header {
-  height: 85vh;
+  height: 95vh;
   background-image: url(../src/img/laptop_blur.jpg);
   background-size: cover;
   background-position: top;
-  position: relative; }
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
   .header__logo-box {
     position: absolute;
     top: 5rem;
@@ -117,20 +148,35 @@ body {
     transform: translate(-50%, -50%);
     text-align: center; }
 
-.heading-primary {
-  color: #fff;
-  text-transform: uppercase;
-  backface-visibility: hidden;
-  margin-bottom: 7rem; }
-  .heading-primary--main {
-    display: block;
-    font-size: 5rem;
-    font-weight: 400;
-    letter-spacing: 2rem;
-    animation: moveInLeft 1s ease-out; }
-  .heading-primary--sub {
-    display: block;
+.section-about {
+  padding: 10rem 0; }
+
+/* Style the tab menu */
+.section-about__tab-menu {
+  overflow: hidden;
+  background-color: #ddd;
+  /* Style the buttons inside the tab */ }
+  .section-about__tab-menu button {
+    background-color: inherit;
+    border: 1px #000 solid;
+    color: #fff;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 2rem;
+    transition: 0.3s;
     font-size: 2rem;
-    font-weight: 400;
-    letter-spacing: 1.2rem;
-    animation: moveInRight 1s ease-out; }
+    /* Change background color of buttons on hover */
+    /* Create an active/current tablink class */ }
+    .section-about__tab-menu button:hover {
+      background-color: #ff9100; }
+    .section-about__tab-menu button.active {
+      background-color: #ff4500; }
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none; }

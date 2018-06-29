@@ -1,0 +1,41 @@
+.section-about {
+    padding: 10rem 0;
+}
+
+/* Style the tab menu */
+.section-about__tab-menu {
+    overflow: hidden;
+    background-color: $grey-light;
+
+    /* Style the buttons inside the tab */
+    & button {
+        background-color: inherit;
+        border: 1px $color-dark solid;
+        color: $color-light;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 2rem;
+        transition: 0.3s;
+        font-size: 2rem;
+
+        /* Change background color of buttons on hover */
+        &:hover {
+            background-color: $orange-light;
+        }
+
+        /* Create an active/current tablink class */
+        &.active {
+            background-color: $orange-dark;
+        }
+    }
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
