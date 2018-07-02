@@ -10,7 +10,6 @@
     /* Style the buttons inside the tab */
     & button {
         background-color: inherit;
-        border: 1px $color-dark solid;
         color: $color-light;
         float: left;
         border: none;
@@ -35,7 +34,6 @@
 /* Style the tab content */
 .tabcontent {
     display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
+    padding: 10rem 20rem;
     border-top: none;
 }

@@ -38,3 +38,14 @@ body {
     color: transparent;
     letter-spacing: 2px;
 }
+
+.tabcontent__heading {
+    font-size: 2.5rem;
+    text-align: center;
+    color: $grey-dark;
+}
+
+.tabcontent__description {
+    padding-top: 4rem;
+    font-size: 1.5rem;
+}
