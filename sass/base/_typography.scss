@@ -40,7 +40,7 @@ body {
 }
 
 .tabcontent__heading {
-    font-size: 2.5rem;
+    font-size: 3rem;
     text-align: center;
     color: $grey-dark;
 }
@@ -48,4 +48,23 @@ body {
 .tabcontent__description {
     padding-top: 4rem;
     font-size: 1.5rem;
+}
+
+.section-portfolio {
+    position: relative;
+
+    &__text-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        // transform: translate(-50%, -50%); -- transform already applied in _home.scss
+        text-align: center;
+    }
+
+    &__heading {
+        font-size: 5rem;
+        font-weight: 400;
+        letter-spacing: 1.2;
+        color: $color-light;
+    }
 }

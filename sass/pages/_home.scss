@@ -39,10 +39,17 @@
 }
 
 .section-portfolio {
+    height: 100%;
+    margin-top: 10rem;
     background-image: linear-gradient(
         to right, 
-        rgba($grey-light, 0.8),
-        rgba($grey-dark, 0.8)),
+        rgba($color-dark, 0.9),
+        rgba($grey-dark, 0.9)),
     url('../src/img/working.jpg');
     background-size: cover;
+    transform: skewY(-7deg);
+
+    & > * {
+        transform: skewY(7deg) translate(-50%, -50%);
+    }
 }

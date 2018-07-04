@@ -44,7 +44,7 @@
             </div>
 
             <div class="section-about__tab-menu">
-                <button class="tablinks" onclick="openSection(event,'history')">Back Story</button>
+                <button class="tablinks" id="defaultOpen" onclick="openSection(event,'history')">Back Story</button>
                 <button class="tablinks" onclick="openSection(event,'me')">Who am I?</button>
                 <button class="tablinks" onclick="openSection(event,'goals')">Aspirations</button>
                 <button class="tablinks" onclick="openSection(event,'gain')">What you get</button>
@@ -79,7 +79,27 @@
         </section>
 
         <section class="section-portfolio">
-            
+            <div class="u-center-text section-portfolio__text-box">
+                <h2 class="section-portfolio__heading">
+                    Portfolio
+                </h2>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <div class="row">
+                <div class="col-1-of-2">
+                    <div class="composition">
+                        <img src="src/img/rd1-mac.png" alt="photo 1" class="composition__photo composition__photo--p1">
+                        <img src="src/img/rd2-mac.png" alt="photo 1" class="composition__photo composition__photo--p2">
+                        <img src="src/img/rd5-mac.png" alt="photo 1" class="composition__photo composition__photo--p3">
+                    </div>
+                </div>
+
+                <div class="col-1-of-2">
+                    description goes here
+                </div>
+            </div>
         </section>
     </main>
     <script src="js/main.js"></script>
