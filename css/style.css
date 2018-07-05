@@ -41,7 +41,9 @@ body {
 
 body {
   font-family: "Open Sans", sans-serif;
-  line-height: 1.7; }
+  line-height: 1.7;
+  font-weight: 400;
+  color: #333; }
 
 .heading-primary {
   color: #fff;
@@ -78,7 +80,7 @@ body {
 
 .tabcontent__description {
   padding-top: 4rem;
-  font-size: 1.5rem; }
+  font-size: 1.6rem; }
 
 .section-portfolio {
   position: relative; }
@@ -93,10 +95,26 @@ body {
     letter-spacing: 1.2;
     color: #fff; }
 
+.composition__heading {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.composition__description {
+  font-size: 1.6rem; }
+  .composition__description:not(:last-child) {
+    margin-bottom: 3rem; }
+
 .u-center-text {
   text-align: center; }
 
-.u-margin-bottom-8 {
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem; }
+
+.u-margin-bottom-big {
   margin-bottom: 8rem; }
 
 .btn:link, .btn:visited {
@@ -156,7 +174,7 @@ body {
   max-width: 114rem;
   margin: 0 auto; }
   .row:not(:last-child) {
-    margin-bottom: 8rem; }
+    margin-bottom: 30rem; }
   .row::after {
     content: "";
     display: table;
