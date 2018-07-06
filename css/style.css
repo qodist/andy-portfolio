@@ -117,6 +117,9 @@ body {
 .u-margin-bottom-big {
   margin-bottom: 8rem; }
 
+.hide {
+  visibility: hidden; }
+
 .btn:link, .btn:visited {
   display: inline-block;
   text-transform: uppercase;
