@@ -41,13 +41,13 @@ body {
     letter-spacing: 2px;
 }
 
-.tabcontent__heading {
+.tab-menu__content--heading {
     font-size: 3rem;
     text-align: center;
     color: $grey-dark;
 }
 
-.tabcontent__description {
+.tab-menu__content--description {
     padding-top: 4rem;
     font-size: $default-font-size;
 }

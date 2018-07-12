@@ -2,9 +2,12 @@
 $color-light: #fff;
 $color-dark: #000;
 $grey-dark: #333;
+$grey-dark-2: #999;
 $grey-light: #ddd;
 $orange-dark: #ff4500;
 $orange-light: #ff9100;
+$green-dark: #55c57a;
+$red-dark: #df000f;
 
 // FONT
 $default-font-size: 1.6rem;
@@ -13,3 +16,12 @@ $default-font-size: 1.6rem;
 $grid-width: 114rem;
 $gutter-vertical: 8rem;
 $gutter-horizontal: 6rem;
+
+// BOX SHADOW
+$light-box-shadow: 0 1.5rem 4rem rgba($color-dark, .2);
+$standard-box-shadow: 0 1.5rem 4rem rgba($color-dark, .4);
+$dark-box-shadow: 0 1.5rem 4rem rgba($color-dark, .6);
+
+$small-light-box-shadow: 0 1rem 2rem rgba($color-dark, .15);
+$small-standard-box-shadow: 0 1rem 2rem rgba($color-dark, .3);
+$small-dark-box-shadow: 0 1rem 2rem rgba($color-dark, .5);

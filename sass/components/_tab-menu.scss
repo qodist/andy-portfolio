@@ -1,0 +1,42 @@
+/* Style the tab menu */
+.tab-menu {
+    overflow: hidden;
+    background-color: $color-light;
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+
+    /* Style the buttons inside the tab */
+    & button {
+        background-color: inherit;
+        color: $grey-light;
+        // float: left;
+        border: none;
+        border-radius: 3px;
+        outline: none;
+        cursor: pointer;
+        padding: 2rem;
+        transition: 0.3s;
+        font-size: 2rem;
+
+        /* Change background color of buttons on hover */
+        &:hover {
+            background-color: $orange-light;
+            color: $color-light;
+        }
+
+        /* Create an active/current tablink class */
+        &.active {
+            background-color: $orange-dark;
+            color: $color-light;
+        }
+    }
+}
+
+/* Style the tab content */
+.tab-menu__content, .tab-menu__content--1 {
+    display: none;
+    padding: 10rem 20rem;
+    border-top: none;
+}

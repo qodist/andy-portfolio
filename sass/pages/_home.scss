@@ -2,42 +2,6 @@
     padding: 10rem 0;
 }
 
-/* Style the tab menu */
-.section-about__tab-menu {
-    overflow: hidden;
-    background-color: $grey-light;
-
-    /* Style the buttons inside the tab */
-    & button {
-        background-color: inherit;
-        color: $color-light;
-        float: left;
-        border: none;
-        outline: none;
-        cursor: pointer;
-        padding: 2rem;
-        transition: 0.3s;
-        font-size: 2rem;
-
-        /* Change background color of buttons on hover */
-        &:hover {
-            background-color: $orange-light;
-        }
-
-        /* Create an active/current tablink class */
-        &.active {
-            background-color: $orange-dark;
-        }
-    }
-}
-
-/* Style the tab content */
-.tabcontent {
-    display: none;
-    padding: 10rem 20rem;
-    border-top: none;
-}
-
 .section-portfolio {
     height: 100%;
     margin-top: 10rem;
@@ -51,5 +15,28 @@
 
     & > * {
         transform: skewY(7deg) translate(-50%, -50%);
+    }
+}
+
+.section-contact {
+    padding: 15rem 0;
+    background-image: linear-gradient(to right bottom, $orange-light, $orange-dark);
+}
+
+.contact {
+    background-image: linear-gradient(105deg, 
+                        rgba($color-light, .9) 0%, 
+                        rgba($color-light, .9) 50%, 
+                        transparent 50%), 
+                    url('../src/img/mailbox.jpg');
+    background-size: 100%;
+    border-radius: 3px;
+    box-shadow: $standard-box-shadow;
+
+    height: 50rem;
+
+    &__form {
+        width: 50%;
+        padding: 6rem;
     }
 }
