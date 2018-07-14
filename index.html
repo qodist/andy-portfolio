@@ -20,6 +20,26 @@
     <title>Andrew Reynolds | Portfolio</title>
 </head>
 <body>
+
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+
+        <div class="navigation__background">&nbsp;</div>
+
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>Home</a></li>
+                <li class="navigation__item"><a href="#about" class="navigation__link"><span>02</span>About</a></li>
+                <li class="navigation__item"><a href="#portfolio" class="navigation__link"><span>03</span>Portfolio</a></li>
+                <li class="navigation__item"><a href="#contact" class="navigation__link"><span>04</span>Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
     <header class="header">
         <div class="header__logo-box">
             <img src="src/img/logo.png" alt="logo" class="header__logo">
@@ -31,12 +51,12 @@
                 <span class="heading-primary--sub">Aspiring Full-Stack Web Developer</span>
             </h1>
 
-            <a href="#" class="btn btn-orange btn-animated">Contact me</a>
+            <a href="#contact" class="btn btn-orange btn-animated">Contact me</a>
         </div>
     </header>
 
     <main>
-        <section class="section-about">
+        <section class="section-about" id="about">
             <div class="u-center-text u-margin-bottom-big">
                 <h2 class="heading-secondary">
                     Yours truly
@@ -78,7 +98,7 @@
             </div>
         </section>
 
-        <section class="section-portfolio">
+        <section class="section-portfolio" id="portfolio">
             <div class="u-center-text section-portfolio__text-box">
                 <h2 class="section-portfolio__heading">
                     Portfolio
@@ -187,14 +207,14 @@
             </div>
         </section>
 
-        <section class="section-contact">
+        <section class="section-contact" id="contact">
             <div class="row">
                 <div class="contact">
                     <div class="contact__form">
                         <form action="#" class="form">
                             <div class="u-margin-bottom-medium">
                                 <h2 class="heading-secondary">
-                                    Contact me
+                                    Contact
                                 </h2>
                             </div>
                             <div class="form__group">
@@ -206,12 +226,45 @@
                                 <input type="email" class="form__input" placeholder="Email address" required id="email">
                                 <label for="email" class="form__label">Email address</label>
                             </div>
+
+                            <div class="form__group">
+                                <textarea class="form__input" id="textarea" placeholder="Message"></textarea>
+                                <label for="textarea" class="form__label">Message</label>
+                            </div>
+
+                            <div class="form__group">
+                                <button class="btn btn-orange">Send</button>
+                            </div>
                         </form>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+
+    <footer class="footer">
+        <div class="footer__logo-box">
+            <img src="src/img/logo.png" alt="logo" class="footer__logo">
+        </div>
+        <div class="row">
+            <div class="col-1-of-2">
+                <div class="footer__navigation">
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#" class="footer__link">Home</a></li>
+                        <li class="footer__item"><a href="#about" class="footer__link">About</a></li>
+                        <li class="footer__item"><a href="#portfolio" class="footer__link">Portfolio</a></li>
+                        <li class="footer__item"><a href="#contact" class="footer__link">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-1-of-2">
+                <p class="footer__copyright">
+                    Copyright &copy; by Andrew Reynolds.
+                </p>
+            </div>
+        </div>
+    </footer>
+
     <!-- <section class="grid-test">
             <div class="row">
                 <div class="col-1-of-2">
