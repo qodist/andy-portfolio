@@ -35,3 +35,13 @@ function openSectionTwo (evt, sectionName){
 
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen-2").click();
+
+//CLOSE NAVIGATION MENU
+var checkbox = document.querySelector(".navigation__checkbox");
+var items = document.querySelectorAll(".navigation__item");
+
+items.forEach(function(item){
+    item.addEventListener("click", function(){
+        checkbox.checked = false;
+    });
+});
