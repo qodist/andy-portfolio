@@ -1,42 +1,42 @@
-.btn {
-    &,
-    &:link,
-    &:visited {
-        display: inline-block;
-        text-transform: uppercase;
-        text-decoration: none;
-        padding: 2rem 4rem;
-        font-size: 1.5rem;
-        border-radius: .5rem;
-        transition: all .2s;
+// .btn {
+//     &,
+//     &:link,
+//     &:visited {
+//         display: inline-block;
+//         text-transform: uppercase;
+//         text-decoration: none;
+//         padding: 2rem 4rem;
+//         font-size: 1.5rem;
+//         border-radius: 3px;
+//         transition: all .2s;
 
-        //Changes for the <button> element
-        border: none;
-        cursor: pointer;
-    }
+//         //Changes for the <button> element
+//         border: none;
+//         cursor: pointer;
+//     }
     
-    &:hover {
-        transform: translateY(3px);
-        box-shadow: $small-standard-box-shadow;
-    }
+//     &:hover {
+//         transform: translateY(3px);
+//         box-shadow: $small-standard-box-shadow;
+//     }
     
-    &:active,
-    &:focus {
-        outline: none;
-        transform: translateY(1px);
-        box-shadow: 0 .5rem 1rem rgba($color-dark, .3);
-    }
+//     &:active,
+//     &:focus {
+//         outline: none;
+//         transform: translateY(1px);
+//         box-shadow: 0 .5rem 1rem rgba($color-dark, .3);
+//     }
     
-    &-orange {
-        background-color: $orange-dark;
-        color: $color-light;
-    }
+//     &-orange {
+//         background-color: $orange-dark;
+//         color: $color-light;
+//     }
     
-    &-animated {
-        animation: moveInBottom .5s ease-out .75s;
-        animation-fill-mode: backwards;
-    }
-}
+//     &-animated {
+//         animation: moveInBottom .5s ease-out .75s;
+//         animation-fill-mode: backwards;
+//     }
+// }
 
 .btn-text {
     &:link,

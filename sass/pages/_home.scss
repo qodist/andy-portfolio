@@ -13,9 +13,19 @@
         to right, 
         rgba($color-dark, 0.9),
         rgba($grey-dark, 0.9)),
-    url('../src/img/working.jpg');
+    url('../src/img/working-small.jpg');
     background-size: cover;
     transform: skewY(-7deg);
+
+    @media (min-resolution: 192dpi) and (min-width: 37.5em),
+           (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+           (min-width: 112.5em) {
+            background-image: linear-gradient(
+                to right, 
+                rgba($color-dark, 0.9),
+                rgba($grey-dark, 0.9)),
+            url('../src/img/working.jpg');
+           }
 
     & > * {
         transform: skewY(7deg) translate(-50%, -50%);
