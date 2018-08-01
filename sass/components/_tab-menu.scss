@@ -37,6 +37,10 @@
 /* Style the tab content */
 .tab-menu__content, .tab-menu__content--1 {
     display: none;
-    padding: 10rem 20rem;
+    padding: 10rem 20rem 5rem 20rem;
     border-top: none;
+
+    @include respond(tab-port) {
+        padding: 5rem 10rem;
+    }
 }

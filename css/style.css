@@ -264,6 +264,9 @@ body {
   width: 90%;
   display: block;
   transition: all .3s; }
+  @media (max-width: 56.25em) {
+    .form__input {
+      width: 100%; } }
   .form__input:focus {
     outline: none;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
@@ -317,12 +320,15 @@ body {
 /* Style the tab content */
 .tab-menu__content, .tab-menu__content--1 {
   display: none;
-  padding: 10rem 20rem;
+  padding: 10rem 20rem 5rem 20rem;
   border-top: none; }
+  @media (max-width: 56.25em) {
+    .tab-menu__content, .tab-menu__content--1 {
+      padding: 5rem 10rem; } }
 
 .footer {
   background-color: #333;
-  padding: 10rem 2rem;
+  padding: 6rem 2rem;
   font-size: 1.4rem;
   color: #eee; }
   @media (max-width: 56.25em) {
@@ -330,13 +336,19 @@ body {
       padding: 4rem 0; } }
   .footer__logo-box {
     text-align: center;
-    margin-bottom: 8rem; }
+    margin-bottom: 6rem; }
     @media (max-width: 56.25em) {
       .footer__logo-box {
-        margin-bottom: 6rem; } }
+        margin-bottom: 4rem; } }
   .footer__logo {
-    width: 15rem;
+    width: 12rem;
     height: auto; }
+    @media (max-width: 56.25em) {
+      .footer__logo {
+        width: 10rem; } }
+    @media (max-width: 37.5em) {
+      .footer__logo {
+        width: 7rem; } }
   .footer__navigation {
     border-top: 1px #999 solid;
     padding-top: 2rem;
@@ -564,7 +576,7 @@ body {
   transform: rotate(-135deg); }
 
 .section-about {
-  padding: 10rem 0; }
+  padding: 6rem 0 0 0; }
   @media (max-width: 56.25em) {
     .section-about {
       padding: 4rem 0 0 0; } }
@@ -579,6 +591,11 @@ body {
     transform: skewY(7deg) translate(-50%, -50%); }
   @media (max-width: 56.25em) {
     .section-portfolio {
+      height: 80%;
+      margin-top: 5rem; } }
+  @media (max-width: 37.5em) {
+    .section-portfolio {
+      height: 60%;
       margin-top: 5rem; } }
 
 .section-contact {
@@ -593,6 +610,19 @@ body {
   background-size: 100%;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4); }
+  @media (max-width: 75em) {
+    .contact {
+      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%), url("../src/img/post.jpg");
+      background-size: cover; } }
+  @media (max-width: 56.25em) {
+    .contact {
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url("../src/img/post.jpg"); } }
   .contact__form {
     width: 50%;
     padding: 6rem; }
+    @media (max-width: 75em) {
+      .contact__form {
+        width: 65%; } }
+    @media (max-width: 56.25em) {
+      .contact__form {
+        width: 100%; } }
