@@ -138,6 +138,24 @@ body {
   font-size: 1.6rem; }
   .composition__description:not(:last-child) {
     margin-bottom: 3rem; }
+  .composition__description a.page-link,
+  .composition__description a.page-link:active {
+    color: #ff4500;
+    text-decoration: none; }
+  .composition__description a.page-link:hover {
+    color: #fff;
+    background-color: #ff4500;
+    text-decoration: none; }
+
+.alert {
+  font-family: inherit;
+  font-size: 1.5rem;
+  padding: 1rem;
+  text-align: center;
+  background-color: #55c57a;
+  color: #fff;
+  margin-bottom: 1rem;
+  display: none; }
 
 .u-center-text {
   text-align: center !important; }

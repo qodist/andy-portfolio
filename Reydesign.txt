@@ -1,0 +1,1 @@
+ReyDesign was a practice project for a fictional web design company. I used flexbox and grid for the first time to organise the service cards as well as an automatic carousel that switched hero images and the navigation toggle from the Natours project.
